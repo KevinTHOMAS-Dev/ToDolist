@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Css/Style.css">
+        <script src="https://kit.fontawesome.com/ad9073fe4f.js" crossorigin="anonymous"></script>
+        <script defer src="./main.js"></script>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <header>
+            <h1>To Do list</h1>
+        </header>
+        <main>
+            <form action="#">
+                <input type="text" class="todo_input">
+                <button class="todo_button" type="submit"><i class="fa-solid fa-square-plus"></i></button>
+                <div class="select">
+                    <select name="todos" class="todo_filter">
+                        <option value="all">Toutes</option>
+                        <option value="completed">Completée</option>
+                        <option value="uncompleted">A Faire</option>
+                    </select>
+                </div>
+            </form>
+            <div class="todo_container">
+                <ul class="todo_list"></ul>
+            </div>
+        </main>
+    </body>
+    </html>

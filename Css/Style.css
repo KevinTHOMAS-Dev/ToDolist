@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, #2525a7 , #04157b);
+    color: white;
+}
+header{
+    font-size: 1.5rem;
+}
+header,
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+.todo_input,
+.todo_button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+.todo_button{
+    color: #04157b;
+    background: yellow;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.todo_button:hover{
+    color: yellow;
+    background: #04157b;
+}
+.todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+.todo_item{
+    flex: 1;
+    padding: 0rem 0.5rem;
+}
+.btn_trash,
+.btn_completed{
+    background: yellow;
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn_completed{
+    background: rgb(73, 204, 73);
+}
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+.todo_filter{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    color: #2525a7;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select{
+    margin: 1rem;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC";
+    background: #2525a7;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3 ease;
+}
+.select:hover::after{
+    background: white;
+    color: #2525a7;
+}
